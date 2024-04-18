@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+#countdown {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    width: 95%;
+    text-align: center;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    padding: 10px;
+    height: 300px;
+    background: #1F1F1F;
+    border-radius: 8px;
+    color: #FFF;
+    margin: 0; /* Убедитесь, что нет внешних отступов, мешающих центрированию */
+}
+
+@media (max-width: 600px) {
+    #countdown {
+        grid-template-columns: 1fr;
+    }
+}
